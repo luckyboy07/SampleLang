@@ -5,15 +5,22 @@
             <div class="panel-body">
                 <div class "table-responsive">
                     <tr>
-                        <th>a</th>
-                        <th>wxasd</th>
-                        <th>awxdasd/th>
-                            <th>asd</th>
-                            <th>Dasdxas</th>
-                            <th>Psdxw</th>
-                            <th>blah</th>
-                            </thead>
+                        <th ng-click="orderByMe('brand')">Brand</th>
+                        <th ng-click="orderByMe('type')">Type</th>
+                        <th ng-click="orderByMe('year')">Year</th>
+                        <th ng-click="ordeByMe('mileage')">Mileage</th>
+                        <th ng-click="oderByMe('price')">Price</th>
+                        <th ng-click="orderByMe('fuel')">Fuel</th>
+                   
+                        </thead>
                     </tr>
+                    <tr ng-repeat="x in names | orderBy:myOrderBy">
+                        <td>{{x.brand}}</td>
+                        <td>{{x.type}}</td>
+                        <td>{{x.year}}</td>
+                        <td>{{x.mileage}}</td>
+                        <td>{{x.price}}</td>
+                        <td>{{x.fuel}}</td>
                 </div>
             </div>
         </table>

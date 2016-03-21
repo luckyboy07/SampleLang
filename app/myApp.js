@@ -5,7 +5,8 @@ angular.module('myApp', ['ui.router'])
         $stateProvider
             .state('bank', {
                 url: '/bank',
-                templateUrl: 'app/view/bank.html'
+                templateUrl: 'app/view/bank.html',
+                controller: 'carCtrl'
             })
             .state('register', {
                 url: '/register',
@@ -14,7 +15,11 @@ angular.module('myApp', ['ui.router'])
             .state('asd', {
                 url: '/asd',
                 templateUrl: 'app/view/asd.html',
-                controller: 'mainCtrl'
+                controller: 'mainCtrl',
+            })
+            .state('sample', {
+                url: '/sample',
+                templateUrl: 'app/view/sample.html'
             });
 
         $urlRouterProvider.otherwise('/asd');

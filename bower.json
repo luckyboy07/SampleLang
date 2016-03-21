@@ -20,6 +20,7 @@
   "dependencies": {
     "angular": "^1.5.1",
     "bootstrap": "^3.3.6",
-    "angular-ui-router": "^0.2.18"
+    "angular-ui-router": "^0.2.18",
+    "angular-modal-service": "^0.9.10"
   }
 }
