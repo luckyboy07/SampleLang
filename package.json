@@ -1,0 +1,23 @@
+{
+  "name": "SampleLang",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luckyboy07/SampleLang.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luckyboy07/SampleLang/issues"
+  },
+  "homepage": "https://github.com/luckyboy07/SampleLang",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "browser-sync": "~2.11.1"
+  }
+}
