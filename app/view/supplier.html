@@ -1,32 +1,29 @@
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h3 class="panel-title">Sample Bank</h3>
+        <h3 class="panel-title">Supplier</h3>
         <div class="panel-body">
             <div class="form-group input-group">
                 <span class="glyphicon glyphicon-search"><input type="text"  ng-model="test"></input></span>
-                <a class="btn btn-primary btn-xs" ng-click="addBank()">
-                    <i class="glyphicon glyphicon-plus"></i>
-                </a>
             </div>
             <div class "table-responsive">
                 <table class="table table-bordered table-hover table-striped">
                     <thead>
                         <th>Name</th>
-                        <th>Address</th>
+                        <th>Description</th>
                         <th>Date Created</th>
                         <th width="10%">Action</th>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="x in names  | filter: test">
+                        <tr ng-repeat="x in names ">
                             <td>{{x.name}}</td>
-                            <td>{{x.address}}</td>
+                            <td>{{x.description}}</td>
                             <td>{{x.date_created | date:'MM/dd/yyyy'}}</td>
                             <td>
                                 <div class="text-right">
-                                    <a class="btn btn-primary btn-xs" ng-click="getBankDetails(x.bk_id)">
+                                    <a class="btn btn-primary btn-xs" ng-click="getSuppDetails(x.pt_id)">
                                         <i class="glyphicon glyphicon-pencil"></i>
                                     </a>
-                                    <a class="btn btn-danger btn-xs" ng-click="deleteBank(x.bk_id)">
+                                    <a class="btn btn-danger btn-xs" ng-click="deleteBank(x.pt_id)">
                                         <i class="glyphicon glyphicon-trash"></i>
                                     </a>
                                 </div>
