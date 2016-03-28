@@ -46,15 +46,15 @@ angular.module("myApp")
                 });
                 return deferred.promise;
             },
-            deleteBankDetail: function(bk_id) {
-                var deferred = $q.defer();
-                $http({
-                    url: API_URL + '/banks/' + bk_id,
-                    method: 'DELETE',
-                }).then(function(res) {
-                    deferred.resolve(res.data);
-                });
-                return deferred.promise;
-            }
+            // deleteBankDetail: function(bk_id) {
+            //     var deferred = $q.defer();
+            //     $http({
+            //         url: API_URL + '/banks/' + bk_id,
+            //         method: 'DELETE',
+            //     }).then(function(res) {
+            //         deferred.resolve(res.data);
+            //     });
+            //     return deferred.promise;
+            // }
         }
     });

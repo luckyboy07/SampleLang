@@ -34,10 +34,16 @@ angular.module('myApp', ['ui.router'])
                 controller: 'suppCtrl',
             })
             .state('supplierdetails', {
-                url: '/supplier/:pt_id',
+                url: '/supplierdetail/:pt_id',
                 templateUrl: 'app/view/supplierdetail.html',
-                controller: 'suppCtrl'
+                controller: 'suppDetailCtrl'
+            })
+             .state('progress', {
+                url: '/progress',
+                templateUrl: 'app/view/progressbar.html',
+                controller: 'ProgressDemoCtrl'
             });
 
-        $urlRouterProvider.otherwise('/asd');
+        $urlRouterProvider.otherwise('/progress');
+
     });
